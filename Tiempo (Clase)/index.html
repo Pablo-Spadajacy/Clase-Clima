@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Clima</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
+</head>
+<!--Código experimental de JS Clima by Cyn, Pablo, Guille-->
+<body>
+    <header>
+        <nav>
+            <h1>Dojo Clima</h1>
+            <ul>
+                <li><a href="#" onclick="alerta(this)">Garin</a></li>
+                <li><a href="#" onclick="alerta(this)">Tigre</a></li>
+                <li><a href="#" onclick="alerta(this)">Savio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="san-jose">
+        <h2 id="ciudad">San Jose</h2>
+        <form>
+            <label>Mostrar temperatura en:</label>
+            <select onchange="convertir(this)">
+                <option>°C</option>
+                <option>°F</option>
+            </select>
+            <!--<input onchange="pepito(this)"> A </input>-->
+        </form>
+        </section>
+        <div class="semana">
+            <article>
+                <h3>Hoy</h3>
+                <img src="assets/some_rain.png" alt="Algo de Lluvia">
+                <h4>Algo de lluvia</h4>
+                <div class="temperaturas">
+                    <span class="max">24</span>
+                    <span class="min">18</span>
+                </div>
+            </article>
+            <article>
+                <h3>Mañana</h3>
+                <img src="assets/some_sun.png" alt="Algo de Lluvia">
+                <h4>Algo de sol</h4>
+                <div class="temperaturas">
+                    <span class="max">27</span>
+                    <span class="min">19</span>
+                </div>
+            </article>
+            <article>
+                <h3>Viernes</h3>
+                <img src="assets/some_clouds.png" alt="Algo de Lluvia">
+                <h4>Algo de Nubes</h4>
+                <div class="temperaturas">
+                    <span class="max">21</span>
+                    <span class="min">16</span>
+                </div>
+            </article>
+            <article>
+                <h3>Sabado</h3>
+                <img src="assets/some_sun.png" alt="Algo de Lluvia">
+                <h4>Algo de Sol</h4>
+                <div class="temperaturas">
+                    <span class="max">26</span>
+                    <span class="min">21</span>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="cookie">
+            <img src="assets/cookie.png" alt="Pitusas">
+            <div>
+                <h4>¡Alto! Hora de cookies</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, maiores? Fuga eveniet suscipit explicabo soluta quaerat libero. Reprehenderit dolorem facilis natus beatae provident dolorum, ad, porro distinctio hic voluptates inventore.</p>
+        </div>
+        <button onclick="eliminar_cookies()">Acepto!</button>
+        </div>
+        
+    </footer>
+<script src="js/script.js" rel="script"></script>
+</body>
+</html>
